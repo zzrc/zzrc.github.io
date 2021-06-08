@@ -1,0 +1,425 @@
+/* Based on https://github.com/hankchizljaw/modern-css-reset and apple.com css*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  border: none;
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+p,
+blockquote,
+figure,
+form,
+fieldset,
+input,
+legend,
+pre,
+abbr,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+pre,
+code,
+address,
+caption,
+th,
+figcaption {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+}
+
+fieldset,
+iframe {
+  border: 0;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main,
+summary,
+details {
+  display: block;
+}
+
+audio,
+canvas,
+video,
+progress {
+  vertical-align: baseline;
+}
+
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: inherit;
+  overflow: visible;
+  vertical-align: inherit;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/*:focus[data-focus-method="mouse"]:not(input):not(textarea):not(select), :focus[data-focus-method="touch"]:not(input):not(textarea):not(select) {*/
+/*	box-shadow: 0 0 0 2px rgba(73, 87, 243, 0.64);*/
+/*}*/
+
+/*:focus-visible {
+  box-shadow: 0 0 0 4px var(--focus);
+}*/
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+html {
+  /*background-color: var(--background);*/
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 106.25%;
+  quotes: 'â€œ' 'â€';
+}
+
+:lang(cs) {
+  quotes: 'â€ž' 'â€œ';
+}
+
+:lang(de) {
+  quotes: 'â€ž' 'â€œ';
+}
+
+:lang(de-CH) {
+  quotes: 'Â«' 'Â»';
+}
+
+:lang(de-LI) {
+  quotes: 'Â«' 'Â»';
+}
+
+:lang(fr) {
+  quotes: 'Â«Â ' 'Â Â»';
+}
+
+:lang(fr-CH) {
+  quotes: 'Â«' 'Â»';
+}
+
+:lang(es-ES) {
+  quotes: 'Â«' 'Â»';
+}
+
+:lang(hu) {
+  quotes: 'â€ž' 'â€œ';
+}
+
+:lang(ja-JP) {
+  quotes: 'ã€Œ' 'ã€';
+}
+
+:lang(no-NO) {
+  quotes: 'Â«' 'Â»';
+}
+
+:lang(lt) {
+  quotes: 'â€ž' 'â€œ';
+}
+
+:lang(pl) {
+  quotes: 'â€ž' 'â€œ';
+}
+
+:lang(ru) {
+  quotes: 'Â« ' ' Â»';
+}
+
+:lang(zh) {
+  quotes: 'ã€Œ' 'ã€';
+}
+
+:lang(zh-CN) {
+  quotes: 'â€œ' 'â€';
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-style: normal;
+}
+
+body:lang(ar) {
+  letter-spacing: 0;
+}
+
+body:lang(ja) {
+  letter-spacing: 0;
+}
+
+body:lang(ko) {
+  line-height: 1.58824;
+  letter-spacing: 0;
+}
+
+body:lang(zh) {
+  letter-spacing: 0;
+}
+
+body:lang(th) {
+  line-height: 1.35296;
+  letter-spacing: 0;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: ltr;
+  text-align: left;
+}
+
+/* Autofill adds unneeded background-color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img {
+  display: block;
+  margin: 0;
+}
+
+h1 + *,
+h2 + *,
+h3 + *,
+h4 + *,
+h5 + *,
+h6 + * {
+  margin-top: 0.72em;
+}
+
+h1 + h1,
+h1 + h2,
+h1 + h3,
+h1 + h4,
+h1 + h5,
+h1 + h6,
+h2 + h1,
+h2 + h2,
+h2 + h3,
+h2 + h4,
+h2 + h5,
+h2 + h6,
+h3 + h1,
+h3 + h2,
+h3 + h3,
+h3 + h4,
+h3 + h5,
+h3 + h6,
+h4 + h1,
+h4 + h2,
+h4 + h3,
+h4 + h4,
+h4 + h5,
+h4 + h6,
+h5 + h1,
+h5 + h2,
+h5 + h3,
+h5 + h4,
+h5 + h5,
+h5 + h6,
+h6 + h1,
+h6 + h2,
+h6 + h3,
+h6 + h4,
+h6 + h5,
+h6 + h6 {
+  margin-top: 0.4em;
+}
+
+p + h1,
+ul + h1,
+ol + h1,
+p + h2,
+ul + h2,
+ol + h2,
+p + h3,
+ul + h3,
+ol + h3,
+p + h4,
+ul + h4,
+ol + h4,
+p + h5,
+ul + h5,
+ol + h5,
+p + h6,
+ul + h6,
+ol + h6 {
+  margin-top: 1.6em;
+}
+
+p + *,
+ul + *,
+ol + * {
+  margin-top: 0.8em;
+}
+
+ul,
+ol {
+  margin-left: 1.17647em;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+nav ul,
+nav ol {
+  margin: 0;
+  list-style: none;
+}
+
+li li {
+  font-size: 1em;
+}
