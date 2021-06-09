@@ -23,9 +23,27 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  /*background-color: var(--background);*/
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 106.25%;
+  quotes: "â€œ" "â€";
 }
 
 /* Set core root defaults */
@@ -35,9 +53,17 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+  margin: 0;
+  padding: 0;
+
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-style: normal;
 }
 
 /* A elements that don't have a class get default styles */
@@ -75,16 +101,6 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 ul,
@@ -181,87 +197,64 @@ button:disabled {
   padding: 0;
 }
 
-html {
-  /*background-color: var(--background);*/
-
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Old versions of Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none;
-
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: 106.25%;
-  quotes: 'â€œ' 'â€';
-}
-
 :lang(cs) {
-  quotes: 'â€ž' 'â€œ';
+  quotes: "â€ž" "â€œ";
 }
 
 :lang(de) {
-  quotes: 'â€ž' 'â€œ';
+  quotes: "â€ž" "â€œ";
 }
 
 :lang(de-CH) {
-  quotes: 'Â«' 'Â»';
+  quotes: "Â«" "Â»";
 }
 
 :lang(de-LI) {
-  quotes: 'Â«' 'Â»';
+  quotes: "Â«" "Â»";
 }
 
 :lang(fr) {
-  quotes: 'Â«Â ' 'Â Â»';
+  quotes: "Â«Â " "Â Â»";
 }
 
 :lang(fr-CH) {
-  quotes: 'Â«' 'Â»';
+  quotes: "Â«" "Â»";
 }
 
 :lang(es-ES) {
-  quotes: 'Â«' 'Â»';
+  quotes: "Â«" "Â»";
 }
 
 :lang(hu) {
-  quotes: 'â€ž' 'â€œ';
+  quotes: "â€ž" "â€œ";
 }
 
 :lang(ja-JP) {
-  quotes: 'ã€Œ' 'ã€';
+  quotes: "ã€Œ" "ã€";
 }
 
 :lang(no-NO) {
-  quotes: 'Â«' 'Â»';
+  quotes: "Â«" "Â»";
 }
 
 :lang(lt) {
-  quotes: 'â€ž' 'â€œ';
+  quotes: "â€ž" "â€œ";
 }
 
 :lang(pl) {
-  quotes: 'â€ž' 'â€œ';
+  quotes: "â€ž" "â€œ";
 }
 
 :lang(ru) {
-  quotes: 'Â« ' ' Â»';
+  quotes: "Â« " " Â»";
 }
 
 :lang(zh) {
-  quotes: 'ã€Œ' 'ã€';
+  quotes: "ã€Œ" "ã€";
 }
 
 :lang(zh-CN) {
-  quotes: 'â€œ' 'â€';
-}
-
-body {
-  font-size: 17px;
-  line-height: 1.47059;
-  font-weight: 400;
-  letter-spacing: -0.022em;
-  font-style: normal;
+  quotes: "â€œ" "â€";
 }
 
 body:lang(ar) {
@@ -292,7 +285,7 @@ textarea,
 select,
 button {
   font-synthesis: none;
-  -moz-font-feature-settings: 'kern';
+  -moz-font-feature-settings: "kern";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   direction: ltr;
