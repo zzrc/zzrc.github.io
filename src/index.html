@@ -6,141 +6,47 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      sizes="16x16 24x24 32x32 48x48 64x64"
+      href="favicon.ico"
+    />
+
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="manifest" href="/zzrc.webmanifest" />
     <meta name="apple-mobile-web-app-title" content="Zazerkale" />
     <meta name="application-name" content="Zazerkale" />
+
     <title>Zazerkale</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <style>
+      #preloader {
+        pointer-events: none;
+        transition: opacity 0.5s linear;
+
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+
+        background: radial-gradient(closest-side, #040033, black);
+      }
+
+      body.loaded #preloader {
+        opacity: 0;
+      }
+    </style>
   </head>
 
   <body>
-    <header class="hero">
-      <canvas id="c"></canvas>
-      <nav>
-        <a href="/" class="logo">
-          <svg
-            width="24"
-            height="32"
-            viewbox="0 0 636 884"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M630.239 303.688V228.343C630.239 227.017 629.139 225.942 627.782 225.942H436.219C434.221 225.942 433.059 223.735 434.22 222.146L538.76 79.1412C539.057 78.7339 539.217 78.246 539.217 77.7455V2.401C539.217 1.07497 538.118 0 536.761 0L13.9785 0C12.6217 0 11.5217 1.07496 11.5217 2.401L11.5217 123.562C11.5217 124.888 12.6217 125.963 13.9785 125.963L328.753 125.963C330.756 125.963 331.917 128.181 330.745 129.769L260.491 224.946C260.029 225.572 259.288 225.942 258.498 225.942L105 225.942C103.643 225.942 102.543 227.017 102.543 228.343V349.504C102.543 350.83 103.643 351.905 105 351.905H161.976C163.979 351.905 165.14 354.123 163.968 355.711L0.46432 577.219C0.16245 577.628 0 578.119 0 578.624L0 655.656C0 656.983 1.09993 658.057 2.45677 658.057H193.791C195.795 658.057 196.956 660.275 195.784 661.863L91.4861 803.161C91.1842 803.57 91.0217 804.062 91.0217 804.566V881.599C91.0217 882.925 92.1217 884 93.4785 884H633.543C634.9 884 636 882.925 636 881.599V761.568C636 760.242 634.9 759.167 633.543 759.167H302.612C300.613 759.167 299.451 756.959 300.612 755.37L371.015 659.063C371.476 658.432 372.221 658.057 373.014 658.057H542.522C543.878 658.057 544.978 656.983 544.978 655.656V535.583C544.978 534.273 543.905 533.206 542.565 533.182L468.709 531.894C466.731 531.859 465.604 529.67 466.754 528.097L629.781 305.084C630.079 304.676 630.239 304.188 630.239 303.688ZM352.36 351.905C347.597 351.905 345.216 351.905 343.036 352.537C341.105 353.096 339.297 354.014 337.706 355.243C335.909 356.63 334.504 358.553 331.693 362.398L236.574 492.516C226.976 505.646 222.177 512.211 222.338 517.694C222.478 522.467 224.743 526.928 228.513 529.858C232.845 533.224 240.977 533.224 257.24 533.224H277.815C282.551 533.224 284.92 533.224 287.09 532.599C289.012 532.045 290.813 531.136 292.401 529.918C294.193 528.543 295.599 526.638 298.412 522.827L394.458 392.709C404.164 379.559 409.017 372.984 408.874 367.487C408.749 362.704 406.489 358.227 402.714 355.285C398.377 351.905 390.205 351.905 373.861 351.905H352.36Z"
-              fill="currentColor"
-            />
-          </svg>
-        </a>
-        <ul class="links">
-          <li>
-            <a href="whitepaper.pdf">white paper</a>
-          </li>
-          <li>
-            <button>download</button>
-          </li>
-          <li>
-            <a href="#about">about</a>
-          </li>
-          <li>
-            <a href="#ico">ico</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="description">
-        <h1>Climate-friendly, economical and uncomplicated cryptocurrency</h1>
-        <p>
-          Zazercoin is the next logical step on the way for ideal
-          cryptocurrency. It's ecological, with minimal transactions fees, and
-          simple enough for side people to understand protocol architecture.
-        </p>
-      </div>
-    </header>
-
-    <section class="about" id="about">
-      <article class="mission">
-        <div class="description">
-          <h2>Our mission</h2>
-          <p>
-            Provide easy access to cheap, fast, and secure crypto transactions
-            to obtain more free and economic-savvy society. We will also
-            consider the cases when certain results are achieved by developers
-            inspired by our project as a successful outcome of our work.
-            <span class="underline">
-              Towards the objective, we will adhere to the next values:
-            </span>
-          </p>
-        </div>
-
-        <div class="values">
-          <div>
-            <h3>modernity and leadership</h3>
-            <p>
-              Continuous development is the key to prosperity and value
-              creation. We are doing our best to comply with current standards,
-              rules and agreements on the construction of crypto-transaction
-              distributed systems. Over time, we are going to promote our own
-              revolutionary ideas and methods regarding blockchain technology
-              and related.
-            </p>
-          </div>
-          <div>
-            <h3>absolute reasonable freedom</h3>
-            <p>
-              We believe that ubiquitous centralized control, censorship and
-              constant data collection by the governments and huge corporations
-              are signals of the maturation of a global dictatorial empire, and
-              you know how all empires end. Meta-technologies based on, or
-              parallel to our system will help reduce negative impact of
-              government and of corporations interference.
-            </p>
-          </div>
-          <div>
-            <h3>orientation towards the society</h3>
-            <p>
-              From time immemorial, the main factor around which communities
-              were built and developed was the balance of the personal value of
-              each individual and the common good. Now we are seeing a decline
-              in the desire to comply with this balance at the level of
-              government, which, in an escape for imaginary security, refuses
-              these provisions. Our main value is this balance, and the main
-              task is the desire to return its former strength.
-            </p>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section class="ico" id="ico">
-      <article class="marketStrategy">
-        <h2>Market strategy</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-          delectus id ipsa maxime repellendus. Autem eos quo sequi suscipit
-          voluptate? Animi doloremque ducimus et laborum quis sed veritatis
-          voluptatem voluptates.
-        </p>
-      </article>
-      <article class="initialShares">
-        <h2>Initial shares</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-          delectus id ipsa maxime repellendus. Autem eos quo sequi suscipit
-          voluptate? Animi doloremque ducimus et laborum quis sed veritatis
-          voluptatem voluptates.
-        </p>
-      </article>
-      <article class="increasingOccupation">
-        <h2>Increasing occupation</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-          delectus id ipsa maxime repellendus. Autem eos quo sequi suscipit
-          voluptate? Animi doloremque ducimus et laborum quis sed veritatis
-          voluptatem voluptates.
-        </p>
-      </article>
-    </section>
+    <div id="root"></div>
+    <div id="preloader"></div>
   </body>
 </html>

@@ -2,8 +2,16 @@
   "root": true,
   "parser": "babel-eslint",
   "plugins": [
+    "prettier",
+    "react",
+    "react-hooks",
     "jest",
     "import"
+  ],
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended"
   ],
   "env": {
     "browser": true,
@@ -16,6 +24,7 @@
     "sourceType": "module"
   },
   "rules": {
+    "prettier/prettier": "error",
     "array-callback-return": "warn",
     "default-case": [
       "warn",

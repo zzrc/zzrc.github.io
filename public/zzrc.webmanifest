@@ -1,0 +1,10 @@
+{
+  "name": "Zazerkale",
+  "short_name": "ZZRC",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "related_applications": [{
+    "platform": "web"
+  },
+}
